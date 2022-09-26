@@ -15,7 +15,10 @@ const CONFIG = {
         host: 'localhost',
         port: 4001,
         hot: true,
-        historyApiFallback: true
+        historyApiFallback: true,
+        static: {
+            directory: path.join(__dirname, 'public')
+        }
     }
 };
 
