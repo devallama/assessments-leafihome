@@ -4,3 +4,4 @@ server
 swagger
 webpack.config.js
 webpack.config.dev.js
+*.d.ts
