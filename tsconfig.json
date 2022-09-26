@@ -8,7 +8,7 @@
       "outDir": "./dist",
       "noEmit": false,
       "isolatedModules": true,
-      "strict": true,
+      "strict": false,
       "strictNullChecks": true,
       "moduleResolution": "node",
       "baseUrl": "./",
@@ -26,19 +26,31 @@
         "Global/*": [
           "client/global/*"
         ],
+        "Hooks/*": [
+          "client/hooks/*"
+        ],
+        "Layout/*": [
+          "client/layout/*"
+        ],
         "Molecules/*": [
           "client/molecules/*"
         ],
         "Organisms/*": [
           "client/organisms/*"
         ],
-        "Templates/*": [
-          "client/templates/*"
+        "Pages/*": [
+          "client/pages/*"
+        ],
+        "Public/*": [
+          "public/*"
         ],
         "Theme/*": [
           "client/theme/*"
+        ],
+        "Types/*": [
+          "client/types/*"
         ]
       }
   },
-  "include": ["client/**/*.ts", "client/**/*.tsx"]
+  "include": ["custom.d.ts", "client/**/*.ts", "client/**/*.tsx"]
 }
