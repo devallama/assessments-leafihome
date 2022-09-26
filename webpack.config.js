@@ -15,10 +15,36 @@ module.exports = {
                 use: {
                     loader: 'babel-loader'
                 }
+            },
+            {
+                test: /\.svg$/,
+                use: [
+                    '@svgr/webpack',
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[hash].[ext]',
+                            outputPath: 'static/assets'
+                        }
+                    }
+                ]
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[hash].[ext]',
+                            outputPath: 'static/assets'
+                        }
+                    }
+                ]
             }
         ]
     },
     output: {
+        publicPath: '/',
         filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
         clean: true
