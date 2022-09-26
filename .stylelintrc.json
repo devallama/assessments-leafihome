@@ -1,0 +1,3 @@
+{
+    "extends": ["@devallama/stylelint-config/styled-components"]
+}

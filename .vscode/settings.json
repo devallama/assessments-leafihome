@@ -1,0 +1,41 @@
+{
+    "editor.tabSize": 4,
+    // Controls whether the editor should automatically format the line after typing.
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    // Render the actual characters on a line as opposed to color blocks.
+    "editor.minimap.renderCharacters": false,
+    "branchwarnings.protectedBranches": ["main", "latest"],
+    "files.associations": {
+        "*.stylelintrc": "json"
+    },
+    "todo-tree.filtering.includeGlobs": ["!**/node_modules", "!**/.vscode"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "stylelint.enable": true,
+    "css.validate": false,
+    "scss.validate": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "svg.preview.mode": "svg",
+    "typescript.tsdk": "node_modules\\typescript\\lib",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "stylelint.validate": [
+        "css",
+        "less",
+        "postcss",
+        "scss",
+        "typescript", 
+        "typescriptreact"
+    ]
+}

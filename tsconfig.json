@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+      "target": "es2017",
+      "module": "commonjs",
+      "lib": ["dom", "dom.iterable", "esnext"],
+      "jsx": "preserve",
+      "declaration": true,
+      "outDir": "./dist",
+      "noEmit": false,
+      "isolatedModules": true,
+      "strict": true,
+      "strictNullChecks": true,
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "allowSyntheticDefaultImports": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "paths": {
+        "Atoms/*": [
+          "client/atoms/*"
+        ],
+        "Context/*": [
+          "client/context/*"
+        ],
+        "Global/*": [
+          "client/global/*"
+        ],
+        "Molecules/*": [
+          "client/molecules/*"
+        ],
+        "Organisms/*": [
+          "client/organisms/*"
+        ],
+        "Templates/*": [
+          "client/templates/*"
+        ],
+        "Theme/*": [
+          "client/theme/*"
+        ]
+      }
+  },
+  "include": ["client/**/*.ts", "client/**/*.tsx"]
+}
